@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5ssp"
+        android:background="@drawable/only_borders"
+        android:paddingTop="@dimen/_8ssp"
+        android:paddingBottom="@dimen/_8ssp">
+
+
+        <ImageView
+            android:id="@+id/imageAttachment"
+            android:layout_width="@dimen/_55ssp"
+            android:layout_height="@dimen/_55ssp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5ssp"
+            android:src="@drawable/files_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5ssp"
+            android:layout_marginEnd="@dimen/_5ssp"
+            android:layout_toEndOf="@id/imageAttachment"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3ssp"
+                android:fontFamily="@font/avenir_bold"
+                android:text="File Name:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/txtFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3ssp"
+                android:fontFamily="@font/avenir"
+                android:text="FileName.jpg"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/txtSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3ssp"
+                android:fontFamily="@font/avenir"
+                android:text="FileSize MB"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8ssp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    android:fontFamily="@font/avenir_bold"
+                    android:text="Status: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_text" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgStatusUploading"
+                    android:layout_width="@dimen/_15ssp"
+                    android:layout_height="@dimen/_15ssp"
+                    android:layout_margin="@dimen/_3ssp"
+                    android:layout_toEndOf="@id/txtStatus"
+                    android:src="@drawable/effective" />
+            </RelativeLayout>
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progressBarStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5ssp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10ssp">
+
+    <TextView
+        android:id="@+id/txtOpenGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenir"
+        android:padding="@dimen/_15ssp"
+        android:text="Open Gallery"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_large" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txtOpenGallery"
+        android:background="@color/light_grey" />
+
+    <TextView
+        android:id="@+id/txtOpenFiles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        android:fontFamily="@font/avenir"
+        android:padding="@dimen/_15ssp"
+        android:text="Open Files"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_large" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txtOpenFiles"
+        android:background="@color/light_grey" />
+
+    <TextView
+        android:id="@+id/txtCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider2"
+        android:fontFamily="@font/avenir"
+        android:padding="@dimen/_15ssp"
+        android:text="Cancel"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="@dimen/title_large" />
+
+</RelativeLayout>

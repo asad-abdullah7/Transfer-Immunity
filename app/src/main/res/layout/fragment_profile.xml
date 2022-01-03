@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.ProfileFragment">
+
+        <RelativeLayout
+            android:id="@+id/toolBarSet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:background="@color/accent"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_10ssp"
+            android:paddingTop="@dimen/_10ssp"
+            android:paddingEnd="@dimen/_10ssp"
+            android:paddingBottom="@dimen/_5ssp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_2ssp"
+                android:text="Profile"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_large"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:id="@+id/middlePart"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/middlePart"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="@dimen/_50ssp"
+                    android:layout_height="@dimen/_50ssp"
+                    android:src="@drawable/profile_holder" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_10ssp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/topTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hello!"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/title_text" />
+
+                    <TextView
+                        android:id="@+id/txtUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/topTxt"
+                        android:fontFamily="@font/avenir_bold"
+                        android:text="User Name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/title_text" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/userEmailProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolBarSet"
+            android:padding="@dimen/_15ssp"
+            android:text="useremail@example.com" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/userEmailProfile"
+            android:background="@color/light_grey" />
+
+        <TextView
+            android:id="@+id/dashBoardProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider1"
+            android:padding="@dimen/_15ssp"
+            android:text="Dashboard" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/dashBoardProfile"
+            android:background="@color/light_grey" />
+
+        <TextView
+            android:id="@+id/packageDetailsProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider2"
+            android:padding="@dimen/_15ssp"
+            android:text="Upgrade your Package" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/packageDetailsProfile"
+            android:background="@color/light_grey" />
+
+        <TextView
+            android:id="@+id/languageProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider3"
+            android:padding="@dimen/_15ssp"
+            android:text="Change Language" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5ssp"
+            android:layout_below="@id/languageProfile"
+            android:background="@color/light_grey" />
+
+        <TextView
+            android:id="@+id/signOutProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider4"
+            android:padding="@dimen/_15ssp"
+            android:text="Sign Out"
+            android:textColor="@color/red"
+            android:textSize="@dimen/title_large"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/signOutProfile"
+            android:background="@color/light_grey" />
+
+
+    </RelativeLayout>
+</layout>

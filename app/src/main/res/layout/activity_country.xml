@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.CountryActivity">
+
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15ssp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:src="@drawable/transfer_immunity_ho" />
+
+            <ImageView
+                android:id="@+id/crossImage"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_18ssp"
+                android:layout_gravity="center"
+                android:layout_weight="0.22"
+                android:src="@drawable/close_icon"
+                app:tint="@color/black" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topBar"
+            android:layout_marginStart="@dimen/_15ssp"
+            android:layout_marginEnd="@dimen/_15ssp"
+            android:layout_marginBottom="@dimen/_5ssp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTxtEmailLoginLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTxtEmailLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_55ssp"
+                    android:background="@color/white"
+                    android:inputType="text"
+                    android:padding="@dimen/_5ssp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerCountry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/editTxtEmailLoginLayout"
+                android:layout_marginTop="@dimen/_5ssp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

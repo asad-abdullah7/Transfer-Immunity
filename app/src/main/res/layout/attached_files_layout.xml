@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5ssp">
+
+        <ImageView
+            android:id="@+id/imageAttachment"
+            android:layout_width="@dimen/_50ssp"
+            android:layout_height="@dimen/_50ssp"
+            android:padding="@dimen/_5ssp"
+            android:src="@drawable/files_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/imageAttachment"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/avenir"
+                android:text="File Name"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/txtFileSize"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_2ssp"
+                android:layout_weight="1"
+                android:fontFamily="@font/avenir"
+                android:text="File Size"
+                android:textSize="@dimen/_8ssp" />
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            android:id="@+id/closeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5ssp"
+            android:padding="@dimen/_5ssp"
+            android:src="@drawable/close_icon"
+            app:backgroundTint="@color/red"
+            app:fabCustomSize="@dimen/_18ssp"
+            app:tint="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/imageAttachment"
+            android:background="@color/light_grey" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/sendingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/txtTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginEnd="@dimen/_3ssp"
+                android:fontFamily="@font/avenir_bold"
+                android:text="To: "
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/txtToTxtIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_toEndOf="@id/txtTo"
+                android:fontFamily="@font/avenir"
+                android:text="email to send"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/txtFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTo"
+                android:layout_marginStart="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginEnd="@dimen/_3ssp"
+                android:fontFamily="@font/avenir_bold"
+                android:text="From: "
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/txtFromTxtIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTo"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_toEndOf="@id/txtFrom"
+                android:fontFamily="@font/avenir"
+                android:text="email From send"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/txtSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtFrom"
+                android:layout_marginStart="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginEnd="@dimen/_3ssp"
+                android:fontFamily="@font/avenir_bold"
+                android:text="Subject: "
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/txtSubjectTxtIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtFrom"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_toEndOf="@id/txtSubject"
+                android:fontFamily="@font/avenir"
+                android:text="test"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtSubject"
+                android:layout_marginStart="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginEnd="@dimen/_3ssp"
+                android:fontFamily="@font/avenir_bold"
+                android:text="Date: "
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/txtDataTxtIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtSubject"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_toEndOf="@id/txtDate"
+                android:fontFamily="@font/avenir"
+                android:text="dd/mm/yyyy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgClose"
+                android:layout_width="@dimen/_25ssp"
+                android:layout_height="@dimen/_25ssp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_5ssp"
+                android:background="@drawable/backgroundfile"
+                android:backgroundTint="@color/red"
+                android:padding="@dimen/_3ssp"
+                android:src="@drawable/ic_baseline_close_24" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sendingFileRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDate"
+                android:layout_margin="@dimen/_5ssp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_5ssp"
+                android:layout_below="@id/sendingFileRecycler"
+                android:background="@color/grey"
+                android:orientation="vertical" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

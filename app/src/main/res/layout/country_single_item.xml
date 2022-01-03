@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_5ssp"
+    android:paddingBottom="@dimen/_5ssp">
+
+    <TextView
+        android:id="@+id/txtCountryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3ssp"
+        android:layout_marginEnd="@dimen/_3ssp"
+        android:fontFamily="@font/avenir"
+        android:padding="@dimen/_3ssp"
+        android:text="Country Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txtCountryName"
+        android:layout_marginTop="@dimen/_3ssp"
+        android:background="@color/grey" />
+
+</RelativeLayout>

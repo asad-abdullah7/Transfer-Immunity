@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/newEmail"
+        android:icon="@drawable/new_email_icon"
+        android:title="New Email"
+        android:iconTint="@color/black"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/sentEmails"
+        android:icon="@drawable/receipt_icon"
+        android:iconTint="@color/black"
+        android:title="Sent"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/userProfile"
+        android:icon="@drawable/profile_icon"
+        android:iconTint="@color/black"
+        android:title="Profile"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/userMailHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5ssp"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:layout_marginEnd="@dimen/_5ssp"
+            android:layout_marginBottom="@dimen/_5ssp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sentMailsProfile"
+                android:layout_width="@dimen/_30ssp"
+                android:layout_height="@dimen/_30ssp"
+                android:layout_marginStart="@dimen/_5ssp"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:layout_marginEnd="@dimen/_5ssp"
+                android:layout_marginBottom="@dimen/_5ssp"
+                android:src="@drawable/profile_holder" />
+
+            <TextView
+                android:id="@+id/userMailEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5ssp"
+                android:layout_marginTop="@dimen/_15ssp"
+                android:layout_toRightOf="@id/sentMailsProfile"
+                android:fontFamily="@font/avenir"
+                android:text="User Email"
+                android:textSize="@dimen/normal_text" />
+
+            <TextView
+                android:id="@+id/userMailDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_15ssp"
+                android:layout_marginEnd="@dimen/_5ssp"
+                android:fontFamily="@font/avenir"
+                android:text="Date"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/normal_text" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewSingleEmailAttachment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userMailEmail"
+                android:layout_marginStart="@dimen/_25ssp"
+                tools:listitem="@layout/single_attachment_layout"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginBottom="@dimen/_3ssp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/recyclerViewSingleEmailAttachment"
+                android:background="@color/grey" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

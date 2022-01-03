@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TransferImmunityClone</string>
+    <string name="terms"><p>By signing up, you agree to our \n <a href='https://www.transferimmunity.com/pages/terms-and-conditions'>Terms of use</a> and <a href='https://www.transferimmunity.com/pages/privacy-policy'>Privacy Policy</a> </p></string>
+    <string name="note">Please enter your email address. You will receive a link to create a new password via email.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info_text">File uploading will carry on even if the app is in background. However, if you\ll close it fully (even from the background), it will kill the current file uploading thread and might re-initiate once the app is started again.</string>
+</resources>
